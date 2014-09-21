@@ -3,20 +3,29 @@ using System.Threading;
 
 namespace MrWindows.KeyboardControl {
     public class Keyboard {
-        public void ReleaseKey(VirtualKey key) {
-            KeyboardPInvoke.keybd_event((byte) key, 0x45, 0x1 | 0x2, (UIntPtr) 0);
-        }
-
-        public void PressKey(VirtualKey key) {
-            KeyboardPInvoke.keybd_event((byte) key, 0x45, 0x1, (UIntPtr) 0);
-        }
-
-        public void TypeKey(VirtualKey key, int delay = 0) {
-            PressKey(key);
-            if (delay > 0) {
-                Thread.Sleep(delay);                
+        public Keyboard Press(params VirtualKey[] keys) {
+            foreach (var key in keys) {
+                KeyboardPInvoke.keybd_event((byte)key, 0x45, 0x1, (UIntPtr)0);
             }
-            ReleaseKey(key);
+            return this;
+        }
+
+        public Keyboard Release(params VirtualKey[] keys) {
+            foreach (var key in keys) {
+                KeyboardPInvoke.keybd_event((byte)key, 0x45, 0x1 | 0x2, (UIntPtr)0);
+            }
+            return this;
+        }
+
+        public Keyboard Type(params VirtualKey[] keys) {
+            Press(keys);                
+            Release(keys);
+            return this;
+        }
+
+        public Keyboard Wait(int milliseconds) {
+            Thread.Sleep(milliseconds);
+            return this;
         }
     }
 }

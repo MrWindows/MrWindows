@@ -61,7 +61,7 @@ namespace MrWindows.MouseControl {
         }
 
         public bool IsMouseLeftDown() {
-            return Convert.ToBoolean(MousePInvoke.GetKeyState(VirtualKey.VK_LBUTTON) & (int)KeyState.KeyPressed);
+            return Convert.ToBoolean(MousePInvoke.GetKeyState(VirtualKey.LeftButton) & (int)KeyState.KeyPressed);
         }
 
         public void ScrollVertically(int units) {
@@ -70,9 +70,9 @@ namespace MrWindows.MouseControl {
 
         public void ScrollHorizontally(int units) {
             var keyboard = new Keyboard();
-            keyboard.PressKey(VirtualKey.VK_SHIFT);
+            keyboard.Press(VirtualKey.Shift);
             ScrollVertically(units);
-            keyboard.ReleaseKey(VirtualKey.VK_SHIFT);
+            keyboard.Release(VirtualKey.Shift);
         }
     }
 }

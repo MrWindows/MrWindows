@@ -216,9 +216,9 @@ namespace Sense {
         }
 
         public static void ScrollHorizontally(int units) {
-            SendKeyboardEventDown(VirtualKey.VK_SHIFT);
+            SendKeyboardEventDown(VirtualKey.Shift);
             mouse_event((uint)MouseEventFlags.MOUSEEVENTF_WHEEL, 0, 0, (uint)units, 0);
-            SendKeyboardEventUp(VirtualKey.VK_SHIFT);
+            SendKeyboardEventUp(VirtualKey.Shift);
         }
 
         [Flags]
@@ -316,7 +316,7 @@ namespace Sense {
 
         public static bool IsMouseLeftDown() {
             const int KEY_PRESSED = 0x8000;
-            return Convert.ToBoolean(GetKeyState(VirtualKey.VK_LBUTTON) & KEY_PRESSED);
+            return Convert.ToBoolean(GetKeyState(VirtualKey.LeftButton) & KEY_PRESSED);
         }
 
         public static void MouseMove(int x, int y) {
