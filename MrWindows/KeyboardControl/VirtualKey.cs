@@ -29,8 +29,10 @@
         Shift = 0x10,
         /// <summary></summary>
         Control = 0x11,
-        /// <summary></summary>
+        /// <summary>Alt Key</summary>
         Menu = 0x12,
+        /// <summary>Alt Key</summary>
+        Alt = 0x12,
         /// <summary></summary>
         Pause = 0x13,
         /// <summary></summary>

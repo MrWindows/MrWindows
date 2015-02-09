@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 using MrWindows.KeyboardControl;
+using MrWindows.MediaControl;
 using MrWindows.MouseControl;
 using MrWindows.WindowControl;
 
@@ -10,10 +11,13 @@ namespace MrWindows {
         public Keyboard Keyboard { get; set; }
         public Window CurrentWindow { get; set; }
 
+        public Media Media { get; set; }
+
         public Windows() {
             Mouse = new Mouse();    
             Keyboard = new Keyboard();
             CurrentWindow = new Window();
+            Media = new Media();
         }
 
         public void LockWorkStation() {

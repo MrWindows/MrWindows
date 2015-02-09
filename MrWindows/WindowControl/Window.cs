@@ -11,7 +11,7 @@ namespace MrWindows.WindowControl {
             return GetForegroundProcess().MainWindowTitle;
         }
 
-        private static Process GetForegroundProcess() {
+        public Process GetForegroundProcess() {
             var id = WindowPInvoke.GetForegroundWindow();
             int processId;
             WindowPInvoke.GetWindowThreadProcessId(id, out processId);
@@ -33,5 +33,9 @@ namespace MrWindows.WindowControl {
 
         [DllImport("user32.dll")]
         public static extern int GetWindowText(int hWnd, StringBuilder text, int count);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        static extern bool DestroyWindow(IntPtr hwnd);
     }
 }
