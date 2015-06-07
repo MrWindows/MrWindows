@@ -1,5 +1,7 @@
-﻿using System.Drawing;
+﻿using System.Diagnostics;
+using System.Drawing;
 using System.Windows.Forms;
+using Microsoft.Win32;
 using MrWindows.KeyboardControl;
 using MrWindows.MediaControl;
 using MrWindows.MouseControl;
@@ -10,7 +12,6 @@ namespace MrWindows {
         public Mouse Mouse { get; set; }
         public Keyboard Keyboard { get; set; }
         public Window CurrentWindow { get; set; }
-
         public Media Media { get; set; }
 
         public Windows() {
@@ -35,6 +36,14 @@ namespace MrWindows {
             int screenWidth = Screen.FromPoint(point).Bounds.Width;
             int screenHeight = Screen.FromPoint(point).Bounds.Height;
             return new Size(screenWidth, screenHeight);
+        }
+
+        public Process OpenApp(string key) {
+            return Process.Start(key);
+        }
+
+        public Process GoogleThis(string query) {
+            return Process.Start("http://google.com/search?q=" + query);
         }
     }
 }

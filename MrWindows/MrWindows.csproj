@@ -64,6 +64,7 @@
     <Compile Include="KeyboardControl\KeyboardPInvoke.cs" />
     <Compile Include="KeyboardControl\KeyState.cs" />
     <Compile Include="KeyboardControl\VirtualKey.cs" />
+    <Compile Include="KnownApps.cs" />
     <Compile Include="MediaControl\Media.cs" />
     <Compile Include="MouseControl\IMouse.cs" />
     <Compile Include="MouseControl\Mouse.cs" />

@@ -63,9 +63,9 @@
         ModeChange = 0x1F,
         /// <summary></summary>
         Space = 0x20,
-        /// <summary></summary>
+        /// <summary>Page Up</summary>
         Prior = 0x21,
-        /// <summary></summary>
+        /// <summary>Page Down</summary>
         Next = 0x22,
         /// <summary></summary>
         End = 0x23,
