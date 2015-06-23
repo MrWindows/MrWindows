@@ -1,7 +1,7 @@
 ﻿using MrWindows.KeyboardControl;
 
 namespace MrWindows.MediaControl {
-    public class Media {
+    public class Media : IMedia {
         public void VolumeUp() {
             new Keyboard().Type(VirtualKey.VolumeUp);
         }

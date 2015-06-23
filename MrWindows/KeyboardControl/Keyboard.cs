@@ -2,7 +2,7 @@
 using System.Threading;
 
 namespace MrWindows.KeyboardControl {
-    public class Keyboard {
+    public class Keyboard : IKeyboard {
         public Keyboard Press(params VirtualKey[] keys) {
             foreach (var key in keys) {
                 KeyboardPInvoke.keybd_event((byte)key, VirtualKeyBreak.GetBreak(key), 0x1, (UIntPtr)0);

@@ -60,11 +60,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Files\FileUtil.cs" />
+    <Compile Include="KeyboardControl\IKeyboard.cs" />
     <Compile Include="KeyboardControl\Keyboard.cs" />
     <Compile Include="KeyboardControl\KeyboardPInvoke.cs" />
     <Compile Include="KeyboardControl\KeyState.cs" />
     <Compile Include="KeyboardControl\VirtualKey.cs" />
     <Compile Include="KnownApps.cs" />
+    <Compile Include="MediaControl\IMedia.cs" />
     <Compile Include="MediaControl\Media.cs" />
     <Compile Include="MouseControl\IMouse.cs" />
     <Compile Include="MouseControl\Mouse.cs" />
@@ -74,7 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\MathEx.cs" />
     <Compile Include="WinApi.cs" />
+    <Compile Include="WindowControl\IWindow.cs" />
     <Compile Include="WindowControl\Window.cs" />
+    <Compile Include="WindowControl\WindowPInvoke.cs" />
     <Compile Include="WindowControl\WindowsMessage.cs" />
     <Compile Include="Windows.cs" />
     <Compile Include="WindowsPInvoke.cs" />

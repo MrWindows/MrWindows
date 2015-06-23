@@ -9,10 +9,10 @@ using MrWindows.WindowControl;
 
 namespace MrWindows {
     public class Windows {
-        public Mouse Mouse { get; set; }
-        public Keyboard Keyboard { get; set; }
-        public Window CurrentWindow { get; set; }
-        public Media Media { get; set; }
+        public IMouse Mouse { get; set; }
+        public IKeyboard Keyboard { get; set; }
+        public IWindow CurrentWindow { get; set; }
+        public IMedia Media { get; set; }
 
         public Windows() {
             Mouse = new Mouse();    
