@@ -1,4 +1,4 @@
-﻿namespace MrWindows.MediaControl {
+﻿namespace Dear.MediaControl {
     public interface IMedia {
         void VolumeUp();
         void VolumeDown();

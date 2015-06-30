@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace MrWindows.Util {
+namespace Dear.Util {
     public static class MathEx {
         public static Point CalcMiddle(Point a, Point b) {
             return new Point((a.X + b.X)/2, (a.Y + b.Y)/2);

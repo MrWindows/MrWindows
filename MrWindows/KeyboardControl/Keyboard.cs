@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace MrWindows.KeyboardControl {
+namespace Dear.KeyboardControl {
     public class Keyboard : IKeyboard {
         public Keyboard Press(params VirtualKey[] keys) {
             foreach (var key in keys) {

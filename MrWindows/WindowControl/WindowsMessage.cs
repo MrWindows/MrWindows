@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MrWindows.WindowControl {
+namespace Dear.WindowControl {
     /// <summary>
     /// Windows Messages
     /// Defined in winuser.h from Windows SDK v6.1

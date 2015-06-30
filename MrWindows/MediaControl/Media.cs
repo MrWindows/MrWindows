@@ -1,6 +1,6 @@
-﻿using MrWindows.KeyboardControl;
+﻿using Dear.KeyboardControl;
 
-namespace MrWindows.MediaControl {
+namespace Dear.MediaControl {
     public class Media : IMedia {
         public void VolumeUp() {
             new Keyboard().Type(VirtualKey.VolumeUp);

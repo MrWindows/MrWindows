@@ -1,6 +1,6 @@
 using System;
 
-namespace MrWindows.MouseControl {
+namespace Dear.MouseControl {
     [Flags]
     public enum MouseEventFlags {
         LEFTDOWN = 0x00000002,

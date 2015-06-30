@@ -7,7 +7,7 @@
     <ProjectGuid>{8EC5E180-7455-46FD-BFD5-7A16C99EB19D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MrWindows</RootNamespace>
+    <RootNamespace>Dear</RootNamespace>
     <AssemblyName>MrWindows</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Files\FileUtil.cs" />
+    <Compile Include="Screens\IScreen.cs" />
     <Compile Include="KeyboardControl\IKeyboard.cs" />
     <Compile Include="KeyboardControl\Keyboard.cs" />
     <Compile Include="KeyboardControl\KeyboardPInvoke.cs" />
@@ -74,13 +75,16 @@
     <Compile Include="MouseControl\MousePInvoke.cs" />
     <Compile Include="MouseControl\POINT.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\Screen.cs" />
+    <Compile Include="Tasks\ITaskManager.cs" />
+    <Compile Include="Tasks\TaskManager.cs" />
     <Compile Include="Util\MathEx.cs" />
     <Compile Include="WinApi.cs" />
     <Compile Include="WindowControl\IWindow.cs" />
     <Compile Include="WindowControl\Window.cs" />
     <Compile Include="WindowControl\WindowPInvoke.cs" />
     <Compile Include="WindowControl\WindowsMessage.cs" />
-    <Compile Include="Windows.cs" />
+    <Compile Include="MrWindows.cs" />
     <Compile Include="WindowsPInvoke.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

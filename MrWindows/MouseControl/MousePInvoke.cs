@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
-using MrWindows.KeyboardControl;
+using Dear.KeyboardControl;
 
-namespace MrWindows.MouseControl {
+namespace Dear.MouseControl {
     public static class MousePInvoke {
         [DllImport("user32.dll")]
         public static extern bool GetCursorPos(out POINT lpPoint);

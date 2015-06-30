@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace MrWindows.KeyboardControl {
+namespace Dear.KeyboardControl {
     public static class KeyboardPInvoke {
         [DllImport("user32.dll")]
         public static extern short GetKeyState(VirtualKey key);

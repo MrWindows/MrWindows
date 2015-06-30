@@ -1,4 +1,4 @@
-namespace MrWindows.KeyboardControl {
+namespace Dear.KeyboardControl {
     public interface IKeyboard {
         Keyboard Press(params VirtualKey[] keys);
         Keyboard Release(params VirtualKey[] keys);

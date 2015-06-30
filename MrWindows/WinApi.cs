@@ -10,7 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
-using MrWindows.KeyboardControl;
+using Dear.KeyboardControl;
 
 namespace Sense {
     public static class WinApi {

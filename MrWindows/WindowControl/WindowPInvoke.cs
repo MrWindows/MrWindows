@@ -2,7 +2,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace MrWindows.WindowControl {
+namespace Dear.WindowControl {
     public static class WindowPInvoke {
         [DllImport("user32.dll")]
         public static extern IntPtr GetForegroundWindow();

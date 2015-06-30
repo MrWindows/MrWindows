@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace MrWindows {
+namespace Dear {
     [StructLayout(LayoutKind.Sequential)]
     public struct POINT {
         public int X;

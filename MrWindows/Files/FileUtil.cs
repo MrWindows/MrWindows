@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MrWindows.Files {
+namespace Dear.Files {
     static public class FileUtil {
         [StructLayout(LayoutKind.Sequential)]
         struct RM_UNIQUE_PROCESS {

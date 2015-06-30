@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Drawing;
-using MrWindows.KeyboardControl;
-using MrWindows.Util;
+using Dear.KeyboardControl;
+using Dear.Util;
 
-namespace MrWindows.MouseControl {
+namespace Dear.MouseControl {
     public class Mouse : IMouse {
         public Point CursorLocation {
             get {

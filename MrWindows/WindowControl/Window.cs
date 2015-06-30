@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 
-namespace MrWindows.WindowControl {
+namespace Dear.WindowControl {
     public class Window : IWindow {
         public string GetTitle() {
             return GetForegroundProcess().MainWindowTitle;

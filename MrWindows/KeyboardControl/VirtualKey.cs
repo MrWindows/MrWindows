@@ -1,4 +1,4 @@
-﻿namespace MrWindows.KeyboardControl {
+﻿namespace Dear.KeyboardControl {
     /// <summary>
     /// Enumeration for virtual keys.
     /// </summary>

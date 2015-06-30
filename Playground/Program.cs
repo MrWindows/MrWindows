@@ -1,15 +1,10 @@
 ﻿using System;
-using MrWindows;
+using Dear;
 
 namespace Playground {
     class Program {
         static void Main(string[] args) {
-            var win = new Windows();
-            while (true) {
-                Console.WriteLine("Volume: ");
-                Console.ReadLine();
-                win.Media.VolumeUp();
-            }
+            var win = new MrWindows();
         }
     }
 }

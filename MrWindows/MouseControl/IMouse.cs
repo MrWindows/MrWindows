@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace MrWindows.MouseControl {
+namespace Dear.MouseControl {
     public interface IMouse {
         Point CursorLocation { get; }
         void SetCursorPosition(int x, int y);
