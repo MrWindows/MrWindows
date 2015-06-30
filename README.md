@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MrWindows/MrWindows/master/Assets/MrWindows.png" width="350px" alt="Mr. Windows" />
+  <img src="https://raw.githubusercontent.com/MrWindows/MrWindows/master/Assets/MrWindows_horizontal.png" width="350px" alt="Mr. Windows" />
 </p>
 Tell MrWindows to do anything for you. A.K.A. P/Invoke like a boss :)
 
