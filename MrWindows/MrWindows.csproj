@@ -76,6 +76,7 @@
     <Compile Include="MouseControl\POINT.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Screens\Screen.cs" />
+    <Compile Include="Screens\ScreenPInvoke.cs" />
     <Compile Include="Tasks\ITaskManager.cs" />
     <Compile Include="Tasks\TaskManager.cs" />
     <Compile Include="Util\MathEx.cs" />
