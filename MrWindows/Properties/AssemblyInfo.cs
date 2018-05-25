@@ -8,4 +8,4 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: ComVisible(false)]
 [assembly: Guid("8ab9e31a-4d2a-4d1e-911a-63f4cf00b385")]
-[assembly: AssemblyVersion("0.5")]
+[assembly: AssemblyVersion("1.0.1")]

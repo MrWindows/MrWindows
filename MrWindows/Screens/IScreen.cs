@@ -8,6 +8,10 @@ namespace Dear.Screens {
         void TurnOff();
         void TurnOn();
         void StandBy();
+        /// <summary>
+        /// Changes screen gamma values.
+        /// </summary>
+        /// <param name="gamma">0 to 100</param>
         void SetGamma(int gamma);
     }
 }

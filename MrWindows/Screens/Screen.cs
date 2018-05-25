@@ -35,12 +35,14 @@ namespace Dear.Screens {
         }
 
         public void SetGamma(int gamma) {
-            if(gamma > 256) {
-                gamma = 256;
+            if(gamma < 0) {
+                gamma = 0;
             }
-            if(gamma < 1) {
-                gamma = 1;
+            else if(gamma > 100) {
+                gamma = 100;
             }
+            gamma = ((gamma * 255) / 100)+1;
+            
             var ramp = new RAMP {
                 Green = new ushort[256],
                 Blue = new ushort[256],
