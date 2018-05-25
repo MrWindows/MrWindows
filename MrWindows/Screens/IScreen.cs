@@ -8,5 +8,6 @@ namespace Dear.Screens {
         void TurnOff();
         void TurnOn();
         void StandBy();
+        void SetGamma(int gamma);
     }
 }
