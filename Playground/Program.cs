@@ -23,11 +23,7 @@ namespace Playground {
                 Console.WriteLine("----------------------------------> hadouken!");
             };
 
-            while (true) {
-                hadouken.Invoke();
-                Thread.Sleep(2000);
-                Console.WriteLine("-> " + DateTime.Now.Ticks);
-            }
+            hadouken.Invoke();
         }
     }
 }
