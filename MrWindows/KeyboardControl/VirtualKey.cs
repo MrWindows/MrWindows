@@ -2,9 +2,7 @@
     /// <summary>
     /// Enumeration for virtual keys.
     /// </summary>
-    public enum VirtualKey
-        : ushort
-    {
+    public enum VirtualKey : ushort {
         /// <summary></summary>
         LeftButton = 0x01,
         /// <summary></summary>
@@ -399,5 +397,33 @@
         PA1 = 0xFD,
         /// <summary></summary>
         OEMClear = 0xFE
+    }
+
+    public static class VirtualKeyExtensions {
+        public static bool IsExtendedKey(this VirtualKey keyCode) {
+            if (keyCode == VirtualKey.Menu ||
+                keyCode == VirtualKey.RightMenu ||
+                keyCode == VirtualKey.Control||
+                keyCode == VirtualKey.RightControl ||
+                keyCode == VirtualKey.Insert ||
+                keyCode == VirtualKey.Delete ||
+                keyCode == VirtualKey.Home ||
+                keyCode == VirtualKey.End ||
+                keyCode == VirtualKey.Prior ||
+                keyCode == VirtualKey.Next ||
+                keyCode == VirtualKey.Right ||
+                keyCode == VirtualKey.Up ||
+                keyCode == VirtualKey.Left ||
+                keyCode == VirtualKey.Down ||
+                keyCode == VirtualKey.NumLock ||
+                keyCode == VirtualKey.Cancel ||
+                keyCode == VirtualKey.Snapshot ||
+                keyCode == VirtualKey.Divide) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
     }
 }
