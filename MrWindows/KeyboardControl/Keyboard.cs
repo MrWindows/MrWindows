@@ -5,14 +5,18 @@ namespace Dear.KeyboardControl {
     public class Keyboard : IKeyboard {
         public Keyboard Press(params VirtualKey[] keys) {
             foreach (var key in keys) {
-                KeyboardPInvoke.keybd_event((byte)key, VirtualKeyBreak.GetBreak(key), 0x1, (UIntPtr)0);
+                var flag = key.IsExtendedKey() ? KeyboardFlag.ExtendedKey : 0;
+                var scan = KeyboardPInvoke.MapVirtualKey((uint)key, 0) & 0xFFU;
+                KeyboardPInvoke.keybd_event((byte)key, (byte)scan, (uint)flag, (UIntPtr)0);
             }
             return this;
         }
 
         public Keyboard Release(params VirtualKey[] keys) {
             foreach (var key in keys) {
-                KeyboardPInvoke.keybd_event((byte)key, VirtualKeyBreak.GetBreak(key), 0x1 | 0x2, (UIntPtr)0);
+                var flag = key.IsExtendedKey() ? KeyboardFlag.ExtendedKey | KeyboardFlag.KeyUp : KeyboardFlag.KeyUp;
+                var scan = KeyboardPInvoke.MapVirtualKey((uint)key, 0) & 0xFFU;
+                KeyboardPInvoke.keybd_event((byte)key, (byte)scan, (uint)flag, (UIntPtr)0);
             }
             return this;
         }
@@ -30,6 +34,7 @@ namespace Dear.KeyboardControl {
     }
 
     public static class VirtualKeyBreak {
+        
         public static byte GetBreak(VirtualKey key) {
             if (key == VirtualKey.Alt) {
                 return 0xb8;

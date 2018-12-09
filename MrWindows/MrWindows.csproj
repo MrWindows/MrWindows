@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Files\FileUtil.cs" />
+    <Compile Include="KeyboardControl\KeyboardFlag.cs" />
     <Compile Include="Screens\IScreen.cs" />
     <Compile Include="KeyboardControl\IKeyboard.cs" />
     <Compile Include="KeyboardControl\Keyboard.cs" />
